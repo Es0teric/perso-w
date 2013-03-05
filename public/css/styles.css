@@ -318,7 +318,36 @@
 		font-size: 14px !important;
 	}
 
+/* for  expense report options */
 
+#exp_wrap p {
+	float: left;
+}
 
+#exp_rep_options_content {
+	float: left;
+	width: 700px;
+	padding: 25px 0;
+	/*margin-top: 25px;
+	margin-bottom: 25px;*/
+}
+
+	#exp_rep_options_content label {
+		font-weight: bold;
+	}
+
+	#exp_rep_options_content .controls-row label {
+		float: left;
+		margin: 5px 5px 5px 0;
+		font-weight: normal;
+	}
+	
+	#exp_rep_options_content .controls-row .span1 {
+		margin-right: 5px;
+	}
+
+.exp_report_description a {
+	float: left;
+}
 
 /* end invoice */
