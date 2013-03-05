@@ -27,4 +27,13 @@ class Agency_Calendar_Controller extends Base_Controller
 			
 	}
 	
+	public function action_expense_reports() {
+		
+		$this->layout
+			->nest('content','agency_calendar.expense_reports')
+			->with('title', "AC > Event > Expense Reports");
+			
+		
+	}
+	
 }

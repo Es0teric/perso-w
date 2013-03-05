@@ -1,5 +1,7 @@
 /* @override http://wf.persofolio.dev/css/styles.css */
 
+/* @override http://wf.persofolio.dev/css/styles.css */
+
 /* for save container */
 
 .save_container {
@@ -149,3 +151,174 @@
 #unavailable_time_wrap {
 	float: left;
 }
+
+
+/* for invoice */
+
+/********************************
+***** Imported Invoice styles ***
+********************************/
+
+.ac_invoice_it_ex {
+    background: none;
+    float: left;
+    height: auto;
+    margin: 15px 0 10px;
+    overflow: hidden;
+    padding: 0;
+    width: 700px;
+    color: #26727F;
+    font-family: lucida grande, helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #CAE5FA;
+
+}
+
+.invoice_items {
+    /*background: url("/assets/invoice__item_back.png") repeat scroll 0 0 transparent;*/
+    background: #e5f3fc url('/assets/item_tab.png') no-repeat right center;
+    float: left;
+    height: 21px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    width: 90px;
+}
+
+.invoice_items_selected {
+    /*background: url("/assets/invoice__item_back.png") repeat scroll 0 0 transparent;*/
+    background: #cee7fb url('/assets/item_tab_active.png') no-repeat right center;
+    float: left;
+    height: 21px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    width: 80px;
+}
+
+.invoice_expenses {
+    /*background: url("/assets/invoice_expenses_back.png") repeat scroll 0 0 transparent;*/
+    background: #e5f3fc url('/assets/exp_tab.png') no-repeat left center;
+    float: left;
+    height: 21px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 10px 0 0;
+    width: 90px;
+    text-align: right;
+}
+
+.invoice_expenses_selected {
+    /*background: url("/assets/invoice_expenses_back.png") repeat scroll 0 0 transparent;*/
+    background: #cee7fb url('/assets/exp_tab_active.png') no-repeat left center;
+    float: left;
+    height: 21px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 10px 0 0;
+    width: 100px;
+    text-align: right;
+}
+
+.invoice_navi_menu {
+    height: auto;
+    padding: 1px 0 4px;
+    margin: 0;
+    width: 685px;
+    background: none;
+    float: left;
+}
+
+
+.activity_navi_menu {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    /*width: 500px;*/
+    float: left;
+}
+
+.activity_navi_menu ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden
+
+}
+
+.activity_navi_menu ul li {
+    display: inline;
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 5px 0 9px;
+
+}
+
+.activity_navi_menu ul li a {
+    padding: 0 5px;
+    margin: 0;
+    text-decoration: none;
+    color: #1d585e;
+
+}
+
+/*****************
+***** Expenses ***
+*****************/
+
+#exp_wrap {
+	width: 700px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+#exp_report_table_wrap {
+	background-color: #bde1fb;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+
+	#exp_report_table_wrap .table {
+		border-bottom: 1px solid white;
+		background-color: #E5F3FC;
+	} 
+	
+	#exp_report_table_wrap th {
+		background-color: #858f91;
+		color: white;
+		font-size: 13px;
+	}
+	
+	#exp_report_table_wrap tr td {
+		border: none;
+		font-size: 12px;
+	}
+	
+.activity_navi_menu a:hover {
+	text-decoration: underline;
+}    
+    
+.exp_report_description {
+	text-align: left !important;
+	float: left;
+}
+
+	.exp_report_description p {
+		text-align: left !important;
+	}
+	
+	.exp_report_description p strong {
+		font-size: 14px !important;
+	}
+
+
+
+
+/* end invoice */
