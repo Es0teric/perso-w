@@ -9,20 +9,6 @@
 			<div class="invoice_expenses_selected">expenses</div>
 	
 		</div> 
-	
-	<!-- <div class="invoice_navi_menu">
-			<div class="activity_navi_menu">
-				<ul>
-					<li><a href="#">Add Expense</a></li>
-					<li>|</li>
-					<li><a href="#">Add Expense Report</a></li>
-					<li>|</li>
-					<li><a href="#">Expense Report Options</a></li>
-					<li>|</li>
-					<li><a href="#">Getting Started With Expense Reports</a></li>
-				</ul>
-			</div> 
-		</div> --> <!-- end invoice navi menu -->
 			
 		<div class="exp_report_description">
 			<p><strong>Add Expense Report Options</strong></p>
@@ -42,7 +28,7 @@
 			<div class="control-group">
 				<label class="control-label">Milage Settings:</label>
 				<div class="controls controls-row">
-					<label>Mileage rate is $</label><input type="text" class="span1"><label>per</label><select class="span2"><option>Mile</option></select>
+					<label>Mileage rate is $</label><input type="text" class="span1"><label>per</label><select class="span2"><option>Mile</option><option>Kilometer</option></select>
 				</div>
 			</div>
 			

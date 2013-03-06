@@ -43,4 +43,12 @@ class Agency_Calendar_Controller extends Base_Controller
 			
 	}
 	
+	public function action_add_er() {
+	
+		$this->layout
+			->nest('content','agency_calendar.add_er')
+			->with('title', "AC > Event > Add Report Options");
+					
+	}
+	
 }

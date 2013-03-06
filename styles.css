@@ -313,7 +313,6 @@
 }
 
 	.exp_report_description p {
-		padding-top: 0 !important;
 		text-align: left !important;
 	}
 	
@@ -325,7 +324,6 @@
 
 #exp_wrap p {
 	float: left;
-	padding-top: 10px;
 }
 
 #exp_rep_options_content {
@@ -356,71 +354,5 @@
 
 /* for add expense report */
 
-.add_ex_rep_info_container {
-	overflow: hidden;
-	border-top: 15px solid #858f91;
-	padding: 10px 0;
-	background-color: #E5F3FC;
-	border-bottom: 25px solid #bde1fb;
-	-webkit-border-bottom-right-radius: 10px;
-	-webkit-border-bottom-left-radius: 10px;
-	-moz-border-radius-bottomright: 10px;
-	-moz-border-radius-bottomleft: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
-	.add_ex_rep_info_container form {
-		margin-bottom: 0;
-		overflow: hidden;
-		padding: 5px 0;
-	}
-	
-	.add_ex_rep_info_container form fieldset {
-		float: left;
-		padding: 0 10px;
-	}
-	
-	.add_ex_rep_info_container form label {
-		font-weight: bold;
-		font-size: 13px;
-	}
-	
-.add_ex_rep_info_fieldset_final .control-group {
-		margin-bottom: 0;
-		padding-top: 75px;
-}	
-
-.add_exp_rep_info_extra {
-	float: right;
-}
-
-	.add_exp_rep_info_extra form p {
-		padding-top: 5px !important;
-	}
-	
-	.add_exp_rep_info_extra fieldset {
-		margin: 10px 25px 10px 0;
-	}
-	
-	.add_exp_rep_info_extra fieldset .control-group {
-		margin-bottom: 5px;
-	}
-	
-.save_container p {
-	margin-left: 20px;
-}
-
-.add_reg_or_milage {
-	float: left;
-	margin-top: 10px;
-	margin-left: 10px;
-}
-
-	.add_reg_or_milage li {
-		list-style-type: none;
-		float: left;
-		padding: 0 5px;
-	}
 
 /* end invoice */
