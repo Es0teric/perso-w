@@ -4,6 +4,15 @@
 
 /* @override http://wf.persofolio.dev/css/styles.css */
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
 /* for save container */
 
 .save_container {
@@ -423,4 +432,189 @@
 		padding: 0 5px;
 	}
 
+/* for print invoice/expenses */
+
+#print_exp_wrap {
+	width: 700px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+	#print_exp_wrap th {
+		background-color: #858f91;
+		color: white;
+		font-size: 13px;
+	}
+	
+.print_exp_transport {
+	font-size: 13px;
+}	
+	
+.print_exp_transport table td {
+	border: none;
+	background-color: #E5F3FC;
+}
+
+.print_exp_table {
+	width: 400px;
+	float: left;
+	margin-top: 10px;
+}
+
+	.print_exp_table table td {
+		border: none;
+		font-size: 13px;
+	}
+
+.print_exp_top ul {
+	overflow: hidden;
+	margin-left: 0;
+	margin-top: 5px;
+}
+
+	.print_exp_top ul li {
+		list-style-type: none;
+		float: left;
+		padding-right: 10px;
+	}
+	
+.print_exp_result_info {
+	width: 350px;
+	float: right;
+	font-size: 13px;
+}
+
+	.print_exp_result_info table td {
+		border: none;
+	}
+
+.print_exp_sort {
+	font-size: 13px;
+}
+
+	.print_exp_sort table td {
+		border: none;
+		background-color: #E5F3FC;
+	}
+	
+#print_exp_sig {
+	margin-top: 100px;
+	width: 400px;
+}
+
+.sig_exp {
+	padding-top: 10px;
+	padding-bottom: 50px;
+	border-top: 1px solid black;
+}
+
+	.sig_exp span:last-child {
+		float: right;
+	}
+	
+.approve_sig_exp {
+	padding-top: 10px;
+	border-top: 1px solid black;
+}
+
+	.approve_sig_exp span:last-child {
+		float: right;
+	}
 /* end invoice */
+
+
+/* for tasks */
+
+#tasks_wrap {
+	width: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+	
+
+/***** view task *****/
+
+#tasks_top_form {
+	overflow: hidden;
+	padding: 5px 0;
+	margin-top: 20px;
+}
+
+	#tasks_top_form form {
+		overflow: hidden;
+		margin-bottom: 5px;
+	}
+	
+	#tasks_top_form form div {
+		padding-right: 10px;
+	}
+	
+		#tasks_top_form form div i {
+			padding: 5px 0;
+		}
+	
+	#tasks_top_form form div label {
+		padding-right: 5px;
+		font-weight: bold;
+		font-size: 13px;
+	}
+
+.tasks_top ul {
+	overflow: hidden;
+	margin-left: 0;
+}
+
+	.tasks_top ul li {
+		float: left;
+		padding: 5px 5px 5px 0;
+		list-style-type: none;
+	}
+	
+#tasks_table_wrap {
+	background-color: #E5F3FC;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+	#tasks_table_wrap th {
+		background-color: #858f91;
+		color: white;
+		font-size: 13px;
+	}
+	
+	#tasks_table_wrap .table td {
+		border: none;
+	}
+	
+#tasks_quick_add {
+	overflow: hidden;
+	background-color: #c3e3fa;
+	padding: 3px;
+}
+
+	#tasks_quick_add p {
+		margin-bottom: 0;
+		padding: 5px;
+	}
+
+	#tasks_quick_add form {
+		overflow: hidden;
+		margin-bottom: 0;
+		background-color: #e4f2fb;
+		padding: 10px;
+	}
+	
+	#tasks_quick_add form div {
+		padding-right: 10px;
+	}
+	
+		#tasks_quick_add form div i {
+			padding: 5px 0;
+		}
+	
+	#tasks_quick_add form div label {
+		padding-right: 5px;
+		font-weight: bold;
+		font-size: 13px;
+	}
+
+/* end tasks */

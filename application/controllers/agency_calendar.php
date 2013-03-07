@@ -51,4 +51,12 @@ class Agency_Calendar_Controller extends Base_Controller
 					
 	}
 	
+	public function action_print_exp() {
+		
+		$this->layout
+			->nest('content','agency_calendar.print_exp')
+			->with('title', "AC > Event > Print Expenses");
+			
+	}
+	
 }
