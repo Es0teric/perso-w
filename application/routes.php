@@ -37,6 +37,11 @@
 	return View::make('home.index');
 });*/
 Route::controller(Controller::detect());
+Route::any('am/(:all)/(:all)', function($controller, $action) {
+
+	//do some processing on $uri to get the correct controller to call
+	return Controller::call("{$controller}@{$action}");
+});
 
 /*
 |--------------------------------------------------------------------------

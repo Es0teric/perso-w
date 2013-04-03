@@ -14,4 +14,14 @@ class Base_Controller extends Controller {
 		return Response::error('404');
 	}
 
+	public function titles($title) {
+	
+		$ta = array(
+			'title' => $this->page_title . $title,
+			'tab_title' => $this->tab
+		);
+		
+		return $ta;
+	}
+
 }

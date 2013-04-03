@@ -3,6 +3,9 @@
 class Agency_Calendar_Controller extends Base_Controller
 {
 	public $layout = "layouts.main";
+	public $tab = "Agency Calendar";
+	public $page_title = "AC > Event > ";
+	
 	
 	public function action_index() {
 		
@@ -12,18 +15,18 @@ class Agency_Calendar_Controller extends Base_Controller
 		
 	}
 	
-	public function action_callsheet() {
+	public function action_callsheet() {	
 		
 		$this->layout
 			->nest('content','agency_calendar.callsheet')
-			->with('title', "AC > Event > Callsheet");
+			->with($this->titles("Callsheet"));
 	}
 	
 	public function action_unavailable() {
-	
+		
 		$this->layout
 			->nest('content','agency_calendar.unavailable')
-			->with('title', "AC > Event > Unavailable");
+			->with($this->titles("Unavailable"));
 			
 	}
 	
@@ -31,7 +34,7 @@ class Agency_Calendar_Controller extends Base_Controller
 		
 		$this->layout
 			->nest('content','agency_calendar.expense_reports')
-			->with('title', "AC > Event > Expense Reports");
+			->with($this->titles("Expense Reports"));
 			
 	}
 	
@@ -39,7 +42,7 @@ class Agency_Calendar_Controller extends Base_Controller
 	
 		$this->layout
 			->nest('content','agency_calendar.er_options')
-			->with('title', "AC > Event > Expense Report Options");
+			->with($this->titles("Expense Report Options"));
 			
 	}
 	
@@ -47,7 +50,7 @@ class Agency_Calendar_Controller extends Base_Controller
 	
 		$this->layout
 			->nest('content','agency_calendar.add_er')
-			->with('title', "AC > Event > Add Report Options");
+			->with($this->titles("Add Report Options"));
 					
 	}
 	
@@ -55,7 +58,7 @@ class Agency_Calendar_Controller extends Base_Controller
 		
 		$this->layout
 			->nest('content','agency_calendar.print_exp')
-			->with('title', "AC > Event > Print Expenses");
+			->with($this->titles("Print Expenses"));
 			
 	}
 	

@@ -12,6 +12,29 @@
 	float: right;
 }
 
+.headermain {
+    margin: 40px 0 0 0;
+    padding: 0;
+    /*border-bottom:1px solid #b3b7ba;*/
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.headermain .nav {
+    float: left;
+    border-bottom: none;
+}
+
+.headermain span {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #25737f;
+}
+
 
 /* for save container */
 
@@ -618,3 +641,10 @@
 	}
 
 /* end tasks */
+
+/* account manager begin */
+
+/* for agent config */
+
+
+/* account manager end */
