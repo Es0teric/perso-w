@@ -1,139 +1,103 @@
-<h3>Account Manager, General</h3>
+<?php echo render('elements.am.top'); ?>
 
-<div class="headermain">
-	<div class="navi">
-		<ul class="nav nav-tabs">
+		<div class="general_maincontainer">
+			<div class="general_maincontainer_inner">
+			
+				<form class="form-horizontal">
 				
-			<li><a href="/am/logbook/aa_useractivity">Logbook</a></li>
-									<li><a href="/am/agentconfig/agentinfo">Agent Configuration</a></li>
-									<li class="active">Agency Configuration</li>
-						<li><a href="#">Account Management</a></li>
-						<li><a href="/am/database/customization">Database</a></li>
-					</ul>
-	</div>
-	
-	</div>
- 
-
-<div id="slidermain1">
-
- 
-<div class="billing_coustumbox">
-	<div class="coustumbox_1">
-		<div class="cnavi">
-			<ul>
-								<li><strong>general</strong></li>
-								<li>|</li>
-								<li><a href="/am/agencyconfig/localsettings">local settings</a></li>
-								<li>|</li>
-								<li><a href="/am/agencyconfig/billing">billing</a></li>
-								<li>|</li>
-								<li><a href="/am/agencyconfig/agency_calendar">agency calendar</a></li>
-								<li>|</li>
-								<li><a href="/am/agencyconfig/agency_division">agency division</a></li>
-							</ul>
-		</div>
-	</div>
-</div>
-<div class="main_am_content">
-	<div class="general_maincontainer">
-	<div class="general_maincontainer_inner">
-	
-	<table class="table general_table">
-	
-	<tr>
-		<td class="td_right">Language:</td>
-		<td>
-			<select name="data[]" class="span3 genrl_lan" id="">
-<option value="default">select language</option>
-</select>		</td>
-	</tr>
-	
-	<tr>
-		<td class="td_right">Country:</td>
-		<td>
-			<select name="data[]" class="span4 genrl_lan" id="">
-<option value="default">select country</option>
-</select>		</td>
-	</tr>
-	
-	<tr>
-		<td class="td_right">View your current timezone:</td>
-	<td>
-		<div class="gen_tz">
-			<div class="input select"><select name="data[]" class="span4 genrl_lan" id="">
-<option value="default">select timezone</option>
-</select></div>			<label class="checkbox"><input type="hidden" name="data[]" id="_" value="0"/><input type="checkbox" name="data[]"  value="1" id=""/>display all timezones</label>
-			
-		</div>
-	</td>
-	</tr>
-	
-	<tr>
-		<td class="td_right">Time format:</td>
-		<td>
-			<select name="data[]" class="span2 genrl_lan" id="">
-<option value="default">select format</option>
-</select>		</td>
-	</tr>
-	
-	<tr>
-		<td class="td_right">Default view:</td>
-		<td> 
-			<div class="default_view_ac_gen">
-				<span style="margin-left:0;">Display</span>
-				<select name="data[]" id="">
-<option value="default">select display</option>
-</select>				
-				<span style="padding-left:5px;">First day of week</span>
-				<select name="data[]" id="">
-<option value="default">select day</option>
-</select>			</div>
-			
-			<div style="margin-top:8px;" class="default_view_ac_gen">
-				<span style="margin-right:5px;margin-left:0;">Layout</span>
-				<select name="data[]" id="">
-<option value="default">select layout</option>
-</select>				<img src="/img/cal.gif" alt="not found" />				<span><strong><u><a href="/am/agencyconfig/1">What&#039;s this?</a></u></strong></span>
-			</div>
-		</td>
-	</tr>
+					<div class="control-group">
+						<label class="control-label">Language:</label>
+						<div class="controls">
+							<select class="span3">
+								<option>select language</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">Country:</label>
+						<div class="controls">
+							<select class="span3">
+								<option>select country</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">View current timezone:</label>
+						<div class="controls controls-row">
+							<select class="span3">
+								<option>select timezone</option>
+							</select>
+							<label class="checkbox span2">
+								<input type="checkbox" />display all timezones
+							</label>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">Time format:</label>
+						<div class="controls">
+							<select class="span3">
+								<option>select format</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">Default view:</label>
+						<div class="controls controls-row">
+							<div class="span6" style="margin-left:0;margin-bottom: 10px;">
+								<label class="left" style="margin-right:5px;margin-bottom: 0;">Display</label>
+								<select class="span2">
+									<option>select display</option>
+								</select>
+								<label class="left" style="margin:0 5px;">first day of week</label>
+								<select class="span2">
+									<option>day</option>
+								</select>
+							</div>
+							
+							<div class="span6" style="margin-left:0;">
+								<label class="left" style="margin-right:5px;margin-bottom: 0;">Layout</label>
+								<select class="span2">
+									<option>select display</option>
+								</select>
+								<label class="left" style="margin:0 0 0 10px;"><a href="#"><i class="icon-calendar"></i> <strong>What's this?</strong></a></label>
+							</div>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">Show weekends:</label>
+						<div class="controls controls-row">
+							<label class="radio span1 noleftmargin">
+								<input type="radio" />Yes
+							</label>
+							
+							<label class="radio span1 noleftmargin">
+								<input type="radio" />No
+							</label>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label">Show current time:</label>
+						<div class="controls controls-row">
+							<label class="radio span1 noleftmargin">
+								<input type="radio" />Yes
+							</label>
+							
+							<label class="radio span1 noleftmargin">
+								<input type="radio" />No
+							</label>
+						</div>
+					</div>
+					
+				</form>
 		
-	<tr>
-		<td class="td_right">Show weekends:</td>
-		<td class="wknds_show">
-			<label class="radio"><input type="hidden" name="data[]" id="_" value=""/><input type="radio" name="data[]" id="WkendShow" value="wkend_show" />Yes</label>
-			<label class="radio"><input type="hidden" name="data[]" id="_" value=""/><input type="radio" name="data[]" id="WkendShow" value="wkend_show" />No</label>
-		</td>
-	</tr>
-	
-	
-	<tr>
-		<td class="td_right">Show current time:</td>
-		<td class="show_time_cur">
-			<label class="radio"><input type="hidden" name="data[]" id="_" value=""/><input type="radio" name="data[]" id="ShowCurTime" value="show_cur_time" />Yes</label>
-			<label class="radio"><input type="hidden" name="data[]" id="_" value=""/><input type="radio" name="data[]" id="ShowCurTime" value="show_cur_time" />No</label>
-		</td>
-	</tr>
-	
-	</table>
-	
-	
-	</div>
-	</div>
-	
-	
-<div class="save_container">
-	
 		
-	<div class="save_content">
-		<button class="btn btn-primary disabled" type="submit">Save Changes</button>	</div><!-- end save_content -->
-	
+			</div> <!-- end general maincontainer inner -->
+		</div> <!-- end general maincontainer -->
 		
-	
-</div><!-- end save_container -->
-</div><!-- end main AM content -->
-
-
-
-</div><!-- slidermain1 closed -->
+<?php echo render('elements.am.bottom'); ?>

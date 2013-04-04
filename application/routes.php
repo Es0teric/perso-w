@@ -43,6 +43,12 @@ Route::any('am/(:all)/(:all)', function($controller, $action) {
 	return Controller::call("{$controller}@{$action}");
 });
 
+Route::any('ac/(:all)/(:all)', function($controller, $action) {
+
+	//do some processing on $uri to get the correct controller to call
+	return Controller::call("{$controller}@{$action}");
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
